@@ -1,0 +1,101 @@
+$padding-value: 30px;
+$my-blue: rgb(124, 150, 226);
+$tr-color:#f2f2f2;
+
+.container {
+  height: 1158px;
+  width: 1085px;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+    border: 3px;
+    border-color: $my-blue;
+    border-style: solid double;
+    padding: 15px;
+}
+.item-center{
+  text-align: center;
+}
+img.company-logo {
+  width: 125px;
+  height: 125px;
+  
+}
+.padding-y{
+  padding-top: $padding-value;
+  padding-bottom: $padding-value;
+}
+.company-info{
+  color: gray;
+  font-weight: bold;
+  border-left: red solid 3px;
+  padding: 5px;
+}
+.table-style{
+  th{
+    background-color: $my-blue;
+    color: white;
+    width: 100px;
+  }
+  tr:nth-child(even)
+  {
+    background-color: $tr-color
+  }
+}
+.invoice{
+  table{
+    width: 100%;
+  }
+  td:nth-child(1),td:nth-child(3), td:nth-child(4){
+    text-align: center;
+  }
+  td:nth-child(3){
+    width: 200px;
+  }
+  tr:last-child, tr:nth-last-child(2) { 
+    td:nth-child(3){
+      text-align: left;
+    }
+    font-weight: bold;
+    background-color: white;
+    outline: solid black 1px;
+  }
+
+}
+
+.padding-top{
+  padding-top: 100px;
+}
+
+.signature {
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+.client{
+  font-size: 20px;
+}
+
+.general{
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  table {
+    width: 100%;
+  }
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.item-right{
+  text-align: right;
+}
+.tax-table{
+  table{
+    width: calc(100% / 3);
+  }
+  
+}
+    

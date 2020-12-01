@@ -1,0 +1,102 @@
+.container {
+  height: 1158px;
+  width: 1085px;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  border: 3px;
+  border-color: #7c96e2;
+  border-style: solid double;
+  padding: 15px;
+}
+
+.item-center {
+  text-align: center;
+}
+
+img.company-logo {
+  width: 125px;
+  height: 125px;
+}
+
+.padding-y {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.company-info {
+  color: gray;
+  font-weight: bold;
+  border-left: red solid 3px;
+  padding: 5px;
+}
+
+.table-style th {
+  background-color: #7c96e2;
+  color: white;
+  width: 100px;
+}
+
+.table-style tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.invoice table {
+  width: 100%;
+}
+
+.invoice td:nth-child(1), .invoice td:nth-child(3), .invoice td:nth-child(4) {
+  text-align: center;
+}
+
+.invoice td:nth-child(3) {
+  width: 200px;
+}
+
+.invoice tr:last-child, .invoice tr:nth-last-child(2) {
+  font-weight: bold;
+  background-color: white;
+  outline: solid black 1px;
+}
+
+.invoice tr:last-child td:nth-child(3), .invoice tr:nth-last-child(2) td:nth-child(3) {
+  text-align: left;
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+
+.signature {
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+.client {
+  font-size: 20px;
+}
+
+.general {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.general table, .general th, .general td {
+  border: 1px solid black;
+}
+
+.general table {
+  width: 100%;
+}
+
+.item-right {
+  text-align: right;
+}
+
+.tax-table table {
+  width: calc(100% / 3);
+}
+/*# sourceMappingURL=app.component.css.map */
