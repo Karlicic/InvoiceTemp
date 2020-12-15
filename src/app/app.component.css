@@ -1,37 +1,40 @@
-.container {
-  height: 1158px;
-  width: 1085px;
-  /* to centre page on screen*/
-  margin-left: auto;
-  margin-right: auto;
+table {
+  -webkit-print-color-adjust: exact !important;
 }
 
-.box {
-  border: 3px;
-  border-color: #7c96e2;
-  border-style: solid double;
-  padding: 15px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px/1.4 Georgia, serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .item-center {
   text-align: center;
 }
 
-img.company-logo {
-  width: 125px;
-  height: 125px;
+.company-logo {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .padding-y {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .company-info {
   color: gray;
-  font-weight: bold;
   border-left: red solid 3px;
-  padding: 5px;
 }
 
 .table-style th {
@@ -44,30 +47,26 @@ img.company-logo {
   background-color: #f2f2f2;
 }
 
-.invoice table {
+.invoice-table table {
   width: 100%;
 }
 
-.invoice td:nth-child(1), .invoice td:nth-child(3), .invoice td:nth-child(4) {
+.invoice-table td:nth-child(1), .invoice-table td:nth-child(3), .invoice-table td:nth-child(4) {
   text-align: center;
 }
 
-.invoice td:nth-child(3) {
+.invoice-table td:nth-child(3) {
   width: 200px;
 }
 
-.invoice tr:last-child, .invoice tr:nth-last-child(2) {
+.invoice-table tr:last-child, .invoice-table tr:nth-last-child(2) {
   font-weight: bold;
   background-color: white;
   outline: solid black 1px;
 }
 
-.invoice tr:last-child td:nth-child(3), .invoice tr:nth-last-child(2) td:nth-child(3) {
+.invoice-table tr:last-child td:nth-child(3), .invoice-table tr:nth-last-child(2) td:nth-child(3) {
   text-align: left;
-}
-
-.padding-top {
-  padding-top: 100px;
 }
 
 .signature {
@@ -75,8 +74,21 @@ img.company-logo {
   border-bottom: 1px solid #000;
 }
 
-.client {
+.client div {
   font-size: 20px;
+  text-align: center;
+  border-width: 3px;
+  border-color: #7c96e2;
+  border-style: solid double;
+  width: 450px;
+  height: 137px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .general {
@@ -98,5 +110,26 @@ img.company-logo {
 
 .tax-table table {
   width: calc(100% / 3);
+}
+
+.company-name div {
+  border-width: 3px;
+  border-color: #7c96e2;
+  border-style: solid double;
+  text-align: center;
+  width: 450px;
+  height: 137px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.invoice {
+  height: 430px;
 }
 /*# sourceMappingURL=app.component.css.map */

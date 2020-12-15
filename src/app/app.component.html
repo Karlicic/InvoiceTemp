@@ -1,10 +1,12 @@
 <div class="container">
-  <div fxLayout="row" fxLayoutAlign="space-around center" class="padding-y">
-    <div><img class="company-logo" src="../assets/images/logo-social.png" alt="logo"></div>
-    <div class="item-center box">
-      <h2>МОТО АМЕРИТ ДООЕЛ-СКОПЈЕ</h2>
-      <h4>ОПИС 1</h4>
-      <p>Дејнсост 1</p>
+  <div fxLayout="row wrap" class="padding-y">
+    <div fxFlex="20" class="company-logo"><img src="../assets/images/logo-social.png" alt="logo" width="125px" height="125px"></div>
+    <div fxFlex="60" class="company-name">
+      <div fxLayout="column">
+        <h3>МОТО АМЕРИТ ДООЕЛ-СКОПЈЕ</h3>
+        <b>ОПИС 1</b>
+        <p>Дејнсост 1</p>
+      </div>  
     </div>
   </div>
 
@@ -14,28 +16,26 @@
     <div fxLayout="column" class="company-info">
       <div>Адреса: УЛ. 1056 БР.22 / МОМИН ПОТОК, СКОПЈЕ 1</div>
       <div>Жиро сметка: 1234567890123456 ХЛБ Банка АД-Скопје</div>
-      <div>ДБ: МК1234567890987</div>
-      <div>МБ: 2626384 </div>
+      <div>ЕДБ: МК1234567890987</div>
+      <div>ЕМБ: 2626384 </div>
+      <div>Сер. бр.13</div>
       <br/>
       <div>Тел./Факс: 02/ 1234-333 / 02/ 2223-444</div>
       <div>Email: motoamerit@amerit.org.mk</div>
       <div>Интернет страна: www.amerit.org.mk</div>
     </div>
-    <div class="item-center box client" fxLayout="column">
-      <h2>Јасмина Здравковкса</h2>
-      <b>Бул. Партизански одреди 105</b>
-      <b>100 Скопје</b>
-      <br/>
-      <div fxLayout="row"  fxLayoutAlign="space-around center" >
-        <div>Број</div>
-        <div>ЕДБ</div>
+    <div class="client">
+      <div fxLayout="column">
+        <h3>Јасмина Здравковкса</h3>
+        Бул. Партизански одреди 105
+        <br>100 Скопје
       </div>
+      <b>Шифра: </b>123456789 
     </div>
+      <div>ЕДБ/ЕМБ</div>
   </div>
-
   <hr/>
-
-  <div class="padding-y general item-center">
+  <div class="general item-center padding-y">
     <table>
       <tr>
         <th>Дадум на промет:</th>
@@ -51,10 +51,11 @@
   </div>
 
   <hr/>
+  <div class="invoice">
   <div fxLayout="row" fxLayoutAlign="space-around center" class="padding-y">
-    <h1>Фактура бр.13</h1>
+    <h2>Фактура бр.13</h2>
   </div>
-  <div class="table-style invoice">
+  <div class="table-style invoice-table">
     <table>
       <tr class="item-center">
         <th>Бр.</th>
@@ -98,7 +99,6 @@
         <td></td>
         <td>250.00</td>
       </tr>
-      <br>
       <tr class="item-right">
         <td></td>
         <td></td>
@@ -130,9 +130,9 @@
 
     </table>
   </div>
-<br>
-<div class="table-style tax-table">
-  <table class="padding-y">
+
+<div class="table-style tax-table padding-y">
+  <table>
     <tr>
       <th>ДДВ %</th>
       <th>Основица</th>
@@ -155,9 +155,10 @@
     </tr>
   </table>
 </div>
- <br/>
+</div>
 
-  <div class="padding-y padding-top">
+
+  <div>
     SK-656-SS/ Јасмина Здравковкса
     <br>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -166,10 +167,10 @@
        in fugiat. Quod ipsam quis asperiores laborum, id harum.</p>
   </div>
 
-  <div fxLayout="row" fxLayoutAlign="space-evenly center" class="padding-y item-center">
+  <div fxLayout="row" fxLayoutAlign="space-evenly center" class="item-center padding-y">
     <div>Примил <br><br> <input type="text" class="signature"/> </div>
     <div>Прегледал <br> <br> <input type="text" class="signature"/> </div>
-    <div>Овластено лице за потпишување на фактури <br> <br> <input type="text" class="signature"/> </div>
+    <div>Овластено лице за <br> потпишување на фактури <br> <br> <input type="text" class="signature"/> </div>
   </div>
 
 </div>
