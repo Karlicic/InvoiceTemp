@@ -28,8 +28,8 @@ body {
 }
 
 .padding-y {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .company-info {
@@ -91,19 +91,6 @@ body {
       align-content: center;
 }
 
-.general {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.general table, .general th, .general td {
-  border: 1px solid black;
-}
-
-.general table {
-  width: 100%;
-}
-
 .item-right {
   text-align: right;
 }
@@ -130,6 +117,6 @@ body {
 }
 
 .invoice {
-  height: 430px;
+  height: 490px;
 }
 /*# sourceMappingURL=app.component.css.map */
