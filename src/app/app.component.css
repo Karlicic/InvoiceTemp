@@ -9,16 +9,14 @@ table {
 
 body {
   font: 14px/1.4 Georgia, serif;
+  margin: 5mm 25mm 5mm 25mm;
 }
 
 .container {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 800px;
-  margin-top: 0.5in;
-  margin-bottom: 0.5in;
-  margin-left: 0.25in;
-  margin-right: 0.25in;
+  margin: 0 auto;
 }
 
 .item-center {
