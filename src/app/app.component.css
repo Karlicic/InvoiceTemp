@@ -12,8 +12,13 @@ body {
 }
 
 .container {
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 800px;
-  margin: 0 auto;
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
+  margin-left: 0.25in;
+  margin-right: 0.25in;
 }
 
 .item-center {
@@ -49,6 +54,7 @@ body {
 
 .invoice-table table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .invoice-table td:nth-child(1), .invoice-table td:nth-child(3), .invoice-table td:nth-child(4) {
@@ -62,11 +68,18 @@ body {
 .invoice-table tr:last-child, .invoice-table tr:nth-last-child(2) {
   font-weight: bold;
   background-color: white;
-  outline: solid black 1px;
 }
 
 .invoice-table tr:last-child td:nth-child(3), .invoice-table tr:nth-last-child(2) td:nth-child(3) {
   text-align: left;
+}
+
+.invoice-table tr:nth-last-child(2) {
+  border-collapse: collapse;
+}
+
+.invoice-table tr:nth-last-child(2) td:nth-last-child(-n+10) {
+  border-bottom: solid black 1.5px;
 }
 
 .signature {
@@ -74,12 +87,11 @@ body {
   border-bottom: 1px solid #000;
 }
 
-.client div {
-  font-size: 20px;
+.box {
   text-align: center;
   border-width: 3px;
   border-color: #7c96e2;
-  border-style: solid double;
+  border-style: solid;
   width: 450px;
   height: 137px;
   display: -ms-grid;
@@ -100,23 +112,10 @@ body {
 }
 
 .company-name div {
-  border-width: 3px;
-  border-color: #7c96e2;
-  border-style: solid double;
-  text-align: center;
-  width: 450px;
-  height: 137px;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .invoice {
-  height: 490px;
+  height: 500px;
 }
 /*# sourceMappingURL=app.component.css.map */

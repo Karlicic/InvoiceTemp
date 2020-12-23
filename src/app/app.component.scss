@@ -16,8 +16,13 @@ body {
 }
 
 .container {
+  align-content: center;
   width: 800px;
-  margin: 0 auto; 
+  //margin: 0 auto;
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
+  margin-left: 0.25in;
+  margin-right: 0.25in;
 }
 
 .item-center{
@@ -54,6 +59,7 @@ body {
 .invoice-table{
   table{
     width: 100%;
+    border-collapse: collapse;
   }
   td:nth-child(1),td:nth-child(3), td:nth-child(4){
     text-align: center;
@@ -67,7 +73,14 @@ body {
     }
     font-weight: bold;
     background-color: white;
-    outline: solid black 1px;
+  }
+
+  tr:nth-last-child(2){
+    border-collapse:collapse;
+    td:nth-last-child(-n+10){
+      border-bottom: solid black 1.5px;
+    }
+    
   }
 
 }
@@ -77,21 +90,19 @@ body {
   border-bottom: 1px solid #000;
 }
 
-.client{
-  div{
-    font-size: 20px;
+.box {
   text-align: center;
   border-width: 3px;
   border-color: $my-blue;
-  border-style: solid double;
+  border-style: solid;
   width: 450px;
   height: 137px;
   display: grid;
   justify-content: center;
   align-content: center;
-  }
-  
 }
+
+
 .item-right{
   text-align: right;
 }
@@ -104,19 +115,10 @@ body {
 
 .company-name {
   div{
-    border-width: 3px;
-    border-color: $my-blue;
-    border-style: solid double;
-    text-align: center;
-    width: 450px;
-    height: 137px;
     margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    align-content: center;
   }    
 }
 .invoice{
-  height: 490px;
+  height: 500px;
 }
 

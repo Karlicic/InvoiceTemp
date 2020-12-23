@@ -1,8 +1,8 @@
 <div class="container">
   <div fxLayout="row wrap" class="padding-y">
-    <div fxFlex="20" class="company-logo"><img src="../assets/images/logo-social.png" alt="logo" width="125px" height="125px"></div>
+    <div fxFlex="20" class="company-logo"><img src="../assets/images/logo-social.png" alt="logo" width="110px" height="110px"></div>
     <div fxFlex="60" class="company-name">
-      <div fxLayout="column">
+      <div fxLayout="column" class="box">
         <h3>МОТО АМЕРИТ ДООЕЛ-СКОПЈЕ</h3>
         <b>ОПИС 1</b>
         <p>Дејнсост 1</p>
@@ -25,14 +25,17 @@
       <div>Интернет страна: www.amerit.org.mk</div>
     </div>
     <div class="client">
-      <div fxLayout="column">
+      <div fxLayout="column" class="box">
         <h3>Јасмина Здравковкса</h3>
         Бул. Партизански одреди 105
         <br>100 Скопје
       </div>
-      <b>Шифра: </b>123456789 
+      <div fxLayout= "row" fxLayoutAlign="space-between center">
+        <div><b>Шифра: </b>123456789 </div>
+        <div><b>ЕДБ/ЕМБ: </b> МК1234567890987/2626384</div>
+      </div>
+      
     </div>
-      <div>ЕДБ/ЕМБ</div>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-around center">
     <b>Дадум на промет: 24-Јан-20</b>
@@ -104,11 +107,11 @@
         <td>961.02</td>
         <td>6550.02</td>
       </tr>
+      
       <tr class="item-right">
         <td></td>
         <td></td>
-        <td>Вкупно за наплата</td>
-        <td></td>
+        <td colspan="2">Вкупно за наплата</td>
         <td></td>
         <td></td>
         <td></td>
@@ -118,7 +121,6 @@
         <td></td>
         <td>6550.00</td>
       </tr>
-
     </table>
   </div>
 
@@ -152,15 +154,16 @@
   <div>
     SK-656-SS/ Јасмина Здравковкса
     <br>
+    <br>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
        Consectetur laboriosam at optio ullam ipsa impedit sequi 
        adipisci expedita nobis temporibus cupiditate,
        in fugiat. Quod ipsam quis asperiores laborum, id harum.</p>
   </div>
-
+  <br>
   <div fxLayout="row" fxLayoutAlign="space-evenly center" class="item-center padding-y">
     <div>Примил <br><br> <input type="text" class="signature"/> </div>
     <div>Прегледал <br> <br> <input type="text" class="signature"/> </div>
-    <div>Овластено лице за <br> потпишување на фактури <br> <br> <input type="text" class="signature"/> </div>
+    <div>Овластено лице за <br> потпишување <br> <br> <input type="text" class="signature"/> </div>
   </div>
 </div>
