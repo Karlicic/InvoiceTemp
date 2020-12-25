@@ -45,27 +45,42 @@ body {
 }
 
 .table-style{
-  th{
+  tbody th{
     background-color: $my-blue;
     color: white;
     width: 100px;
   }
-  tr:nth-child(even)
+  tbody tr:nth-child(even)
   {
     background-color: $tr-color
   }
 }
+
 .invoice-table{
+
   table{
-    width: 100%;
+    width: 100%; 
     border-collapse: collapse;
   }
-  td:nth-child(1),td:nth-child(3), td:nth-child(4){
+  tbody{
+    td:nth-child(1),td:nth-child(3), td:nth-child(4){
     text-align: center;
   }
   td:nth-child(3){
     width: 200px;
   }
+
+  tr {
+    td{
+      border-bottom-style: none;
+    }   
+  }
+}
+tfoot{
+tr td{
+  border-color: black;
+}
+
   tr:last-child, tr:nth-last-child(2) { 
     td:nth-child(3){
       text-align: left;
@@ -75,13 +90,34 @@ body {
   }
 
   tr:nth-last-child(2){
-    border-collapse:collapse;
+
+    td:nth-last-child(-n+10){
+      border-bottom: solid black 1.5px !important;
+    }
+    
+  }
+
+} 
+
+
+
+
+  /*
+  tr:last-child, tr:nth-last-child(2) { 
+    td:nth-child(3){
+      text-align: left;
+    }
+    font-weight: bold;
+    background-color: white;
+  }
+
+  tr:nth-last-child(2){
     td:nth-last-child(-n+10){
       border-bottom: solid black 1.5px;
     }
     
   }
-
+*/
 }
 
 .signature {
@@ -120,4 +156,5 @@ body {
 .invoice{
   height: 500px;
 }
+
 

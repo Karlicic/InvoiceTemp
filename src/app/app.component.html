@@ -24,11 +24,11 @@
       <div>Email: motoamerit@amerit.org.mk</div>
       <div>Интернет страна: www.amerit.org.mk</div>
     </div>
-    <div class="client">
+    <div>
       <div fxLayout="column" class="box">
-        <h3>Јасмина Здравковкса</h3>
-        Бул. Партизански одреди 105
-        <br>100 Скопје
+        <h2>Јасмина Здравковкса</h2>
+        <b>Бул. Партизански одреди 105</b>
+        <b>100 Скопје</b>
       </div>
       <div fxLayout= "row" fxLayoutAlign="space-between center">
         <div><b>Шифра: </b>123456789 </div>
@@ -51,6 +51,7 @@
   </div>
   <div class="table-style invoice-table">
     <table>
+      <tbody>
       <tr class="item-center">
         <th>Бр.</th>
         <th>Шифра</th>
@@ -93,7 +94,8 @@
         <td></td>
         <td>250.00</td>
       </tr>
-      <tr class="item-right">
+
+      <!--<tr class="item-right">
         <td></td>
         <td></td>
         <td>Вкупно</td>
@@ -120,32 +122,69 @@
         <td></td>
         <td></td>
         <td>6550.00</td>
+      </tr>-->
+    </tbody>
+    <br>
+    <tfoot>
+
+      <tr class="item-right">
+        <td></td>
+        <td></td>
+        <td>Вкупно</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>5589.00</td>
+        <td></td>
+        <td>961.02</td>
+        <td>6550.02</td>
       </tr>
+      <tr class="item-right">
+        <td></td>
+        <td></td>
+        <td colspan="2">Вкупно за наплата</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>6550.00</td>
+      </tr>
+
+    </tfoot>
     </table>
+ 
   </div>
 
 <div class="table-style tax-table padding-y">
   <table>
-    <tr>
-      <th>ДДВ %</th>
-      <th>Основица</th>
-      <th>Данок</th>
-    </tr>
-    <tr class="item-right">
-      <td>0.00</td>
-      <td>250.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr class="item-right">
-      <td>5.00</td>
-      <td>152.38</td>
-      <td>961.02</td>
-    </tr>
-    <tr class="item-right">
-      <td>18.00</td>
-      <td>5339.00</td>
-      <td>961.02</td>
-    </tr>
+    <tbody>
+      <tr>
+        <th>ДДВ %</th>
+        <th>Основица</th>
+        <th>Данок</th>
+      </tr>
+      <tr class="item-right">
+        <td>0.00</td>
+        <td>250.00</td>
+        <td>0.00</td>
+      </tr>
+      <tr class="item-right">
+        <td>5.00</td>
+        <td>152.38</td>
+        <td>961.02</td>
+      </tr>
+      <tr class="item-right">
+        <td>18.00</td>
+        <td>5339.00</td>
+        <td>961.02</td>
+      </tr>
+    </tbody>
+
   </table>
 </div>
 </div>

@@ -40,14 +40,33 @@ body {
   border-left: red solid 3px;
 }
 
-.table-style th {
+.table-style tbody th {
   background-color: #7c96e2;
   color: white;
   width: 100px;
 }
 
-.table-style tr:nth-child(even) {
+.table-style tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.invoice-table {
+  /*
+  tr:last-child, tr:nth-last-child(2) { 
+    td:nth-child(3){
+      text-align: left;
+    }
+    font-weight: bold;
+    background-color: white;
+  }
+
+  tr:nth-last-child(2){
+    td:nth-last-child(-n+10){
+      border-bottom: solid black 1.5px;
+    }
+    
+  }
+*/
 }
 
 .invoice-table table {
@@ -55,29 +74,33 @@ body {
   border-collapse: collapse;
 }
 
-.invoice-table td:nth-child(1), .invoice-table td:nth-child(3), .invoice-table td:nth-child(4) {
+.invoice-table tbody td:nth-child(1), .invoice-table tbody td:nth-child(3), .invoice-table tbody td:nth-child(4) {
   text-align: center;
 }
 
-.invoice-table td:nth-child(3) {
+.invoice-table tbody td:nth-child(3) {
   width: 200px;
 }
 
-.invoice-table tr:last-child, .invoice-table tr:nth-last-child(2) {
+.invoice-table tbody tr td {
+  border-bottom-style: none;
+}
+
+.invoice-table tfoot tr td {
+  border-color: black;
+}
+
+.invoice-table tfoot tr:last-child, .invoice-table tfoot tr:nth-last-child(2) {
   font-weight: bold;
   background-color: white;
 }
 
-.invoice-table tr:last-child td:nth-child(3), .invoice-table tr:nth-last-child(2) td:nth-child(3) {
+.invoice-table tfoot tr:last-child td:nth-child(3), .invoice-table tfoot tr:nth-last-child(2) td:nth-child(3) {
   text-align: left;
 }
 
-.invoice-table tr:nth-last-child(2) {
-  border-collapse: collapse;
-}
-
-.invoice-table tr:nth-last-child(2) td:nth-last-child(-n+10) {
-  border-bottom: solid black 1.5px;
+.invoice-table tfoot tr:nth-last-child(2) td:nth-last-child(-n+10) {
+  border-bottom: solid black 1.5px !important;
 }
 
 .signature {
