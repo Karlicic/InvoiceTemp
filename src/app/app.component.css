@@ -130,6 +130,7 @@ body {
 
 .tax-table table {
   width: calc(100% / 3);
+  border-collapse: collapse;
 }
 
 .company-name div {
